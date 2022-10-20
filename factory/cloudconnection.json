@@ -1,0 +1,9 @@
+{
+	"name": "cloudconnection",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "93f6af3f-6ccf-4dbd-83db-2287824c3493",
+		"tenantId": "8d670ed3-792f-4106-9e67-e928fdb7a044"
+	}
+}

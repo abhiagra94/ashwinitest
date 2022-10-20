@@ -1,0 +1,46 @@
+{
+	"name": "Oldwatermarklookup",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Deltasource",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "sourceschemaname",
+				"type": "varchar"
+			},
+			{
+				"name": "sourcetablename",
+				"type": "varchar"
+			},
+			{
+				"name": "blobsinktablename",
+				"type": "varchar"
+			},
+			{
+				"name": "blobsinkfoldername",
+				"type": "varchar"
+			},
+			{
+				"name": "sqlschemaname",
+				"type": "varchar"
+			},
+			{
+				"name": "sqltablename",
+				"type": "varchar"
+			},
+			{
+				"name": "watermark",
+				"type": "date"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "METADATA"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

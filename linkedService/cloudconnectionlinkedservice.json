@@ -1,0 +1,20 @@
+{
+	"name": "cloudconnectionlinkedservice",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"connectionString": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=cloudconnection.database.windows.net;Initial Catalog=cloud;User ID=Cloud",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzureKeyVault1",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "SQLPASSWORD",
+				"secretVersion": "c219ad69b80d4fd88c0b18ceb558d790"
+			}
+		}
+	}
+}
